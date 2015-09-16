@@ -35750,8 +35750,8 @@ define("tinymce/ui/FormatControls", [
 
 			return {
 				type: 'listbox',
-				text: 'Font Family',
-				tooltip: 'Font Family',
+				text: 'Font',
+				tooltip: 'Font',
 				values: items,
 				fixedWidth: true,
 				onPostRender: createListBoxChangeHandler(items, 'fontname'),
@@ -35780,8 +35780,8 @@ define("tinymce/ui/FormatControls", [
 
 			return {
 				type: 'listbox',
-				text: 'Font Sizes',
-				tooltip: 'Font Sizes',
+				text: 'Font Size',
+				tooltip: 'Font Size',
 				values: items,
 				fixedWidth: true,
 				onPostRender: createListBoxChangeHandler(items, 'fontsize'),
@@ -35794,7 +35794,7 @@ define("tinymce/ui/FormatControls", [
 		});
 
 		editor.addMenuItem('formats', {
-			text: 'Formats',
+			text: 'Format',
 			menu: formatMenu
 		});
 	}
