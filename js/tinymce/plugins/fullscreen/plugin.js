@@ -123,6 +123,8 @@ tinymce.PluginManager.add('fullscreen', function(editor) {
 			var self = this;
 
 			editor.on('FullscreenStateChanged', function(e) {
+				if(e.state) self.settings.tooltip = "Exit fullscreen";
+				else self.settings.tooltip = "Fullscreen";
 				self.active(e.state);
 			});
 		}
